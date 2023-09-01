@@ -13,7 +13,6 @@ function findRotatedIndex(arr, num) {
   }
   while (startIndex <= endIndex) {
     const testIndex = Math.floor((endIndex - startIndex) / 2) + startIndex;
-    console.log(testIndex);
     const testVal = arr[testIndex];
     // if traveling from lastTestIndex to testIndex, crossed the pivot;
     if ((testVal > lastTestVal) !== expectLarger) {
@@ -46,13 +45,13 @@ Test if num is larger or smaller than arr[0];
 Whenever we cross pivot !correctSideOfPivot;
 if (num === testIndex)
   return testIndex;
-if (num < testIndex) && correctSideOfPivot)
+if (num < testIndex && correctSideOfPivot)
   Then test to the left
-if (num > testIndex) && correctSideOfPivot)
+if (num > testIndex && correctSideOfPivot)
   Then test to the right
-if (num < testIndex) && !correctSideOfPivot)
+if (num < testInde) && !correctSideOfPivot)
   Then test to the right
-if (num > testIndex) && !correctSideOfPivot)
+if (num > testIndex && !correctSideOfPivot)
   Then test to the left
 Condense the above into a single if else.
 */
